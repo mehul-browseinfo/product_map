@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <record id="product_map_form_view" model="ir.ui.view">
+            <field name="name">product.form.view.map.inherit</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <group name="procurement" position="after">
+                    <group string="Warehouse">
+                     	<field name="qty_warehouse1"/>
+                     	<field name="qty_warehouse2"/>
+                     	<field name="qty_warehouse3"/>
+                     	<field name="qty_warehouse4"/>
+                     	<field name="qty_warehouse5"/>
+                     	<field name="order_wh1"/>
+                     	<field name="order_wh2"/>
+                     	<field name="order_wh3"/>
+                     	<field name="order_wh4"/>
+                     	<field name="order_wh5"/>
+                    </group>
+                </group>
+	            <field name="list_price" position="after">
+	                 	<field name="discount_price"/>
+	                 	<field name="supplier_ref"/>
+                     	<field name="start_date"/>
+                     	<field name="end_date"/>
+	            </field>
+            </field>
+        </record>
+    </data>
+</openerp>
